@@ -3,7 +3,7 @@ import { TextField, Button, Typography, Container, Box, Link } from '@mui/materi
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../AuthContext.jsx';
-import './product.css';
+import './Product.css';
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
