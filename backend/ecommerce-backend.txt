@@ -1,0 +1,33 @@
+ecommerce-backend/
+│
+├── config/                 # Configuration files
+│   └── db.js               # Database connection setup
+│
+├── controllers/            # Controller files for handling business logic
+│   ├── authController.js   # Handles user authentication logic
+│   ├── productController.js # Handles product-related operations
+│   └── cartController.js   # Handles cart operations
+│
+├── middlewares/            # Middleware for reusable logic
+│   ├── authMiddleware.js   # Middleware for authentication and token verification
+│   └── errorHandler.js     # Centralized error handling middleware
+│
+├── models/                 # Mongoose schemas and models
+│   ├── User.js             # User schema and model
+│   ├── Product.js          # Product schema and model
+│   └── Cart.js             # Cart schema and model
+│
+├── routes/                 # API route handlers
+│   ├── authRoutes.js       # Routes for user login, registration
+│   ├── productRoutes.js    # Routes for fetching, adding, and updating products
+│   └── cartRoutes.js       # Routes for managing cart
+│
+├── utils/                  # Utility functions
+│   ├── tokenUtils.js       # Helper functions for JWT creation/validation
+│   └── validation.js       # Input validation logic
+│
+├── .env                    # Environment variables (e.g., DB URI, JWT secret)
+├── .gitignore              # Files to exclude from Git
+├── index.js                # Main entry point of the application
+├── package.json            # Project metadata and dependencies
+└── README.md               

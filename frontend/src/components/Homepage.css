@@ -1,0 +1,38 @@
+:root {
+    --bs-body-font-family: 'Revalia'; /* Replace with your font */
+  }
+
+
+body {
+    background: none;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: black; /* Fallback in case the video doesn't load */
+}
+
+.fade-in-text {
+  color: white;
+  font-size: 2rem; /* Adjust size as needed */
+  opacity: 0;
+  transform: translateY(20px);
+  text-align: center;
+  transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+}
+
+.fade-in-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

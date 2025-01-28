@@ -1,0 +1,36 @@
+.cart-container {
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.cart-item {
+  background-color: #1c1c1c;
+}
+
+.cart-item img {
+  height: 200px;
+}
+
+.cart-item-content {
+  color: #fff;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cart-item-actions button {
+  margin: 0 0.5rem;
+}
+
+.cart-item-actions .quantity {
+  margin: 0 1rem;
+}
+
+.cart-item-actions .delete-button {
+  margin-top: 1rem;
+}

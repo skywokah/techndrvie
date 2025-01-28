@@ -1,0 +1,57 @@
+/* Navbar.css */
+body {
+    margin: 0;
+    font-family:  'Revalia';
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .navbar-logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #00bcd4;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-icons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-icons i:hover {
+    color: #00bcd4;
+  }
+  
+  

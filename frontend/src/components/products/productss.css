@@ -1,0 +1,10 @@
+:root {
+    --bs-body-font-family: 'Revalia'; /* Replace with your font */
+  }
+.h{
+    font-family: 'Revalia';
+    color: azure;
+}
+.hh{
+    font-size: larger;
+}

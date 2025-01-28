@@ -1,0 +1,107 @@
+
+.overall-container {
+  position: relative; /* Establishes positioning for pseudo-element */
+  width: auto;
+  height: 423px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Remove background from the main container */
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px;
+}
+
+.overall-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0047ab;  /* Green background */
+  border-radius: 10px;
+  opacity: 0.7; /* Set the opacity for the background only */
+  z-index: -1; /* Place it behind the content */
+}
+
+.overall-containerspeaker  {
+  position: relative; /* Establishes positioning for pseudo-element */
+  width: auto;
+  height: 423px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Remove background from the main container */
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px;
+}
+
+.overall-containerspeaker::before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fb7a01; /* Green background */
+  border-radius: 10px;
+  opacity: 0.7; /* Set the opacity for the background only */
+  z-index: -1; /* Place it behind the content */
+}
+
+
+.overall-containergaminghead {
+  position: relative; /* Establishes positioning for pseudo-element */
+  width: auto;
+  height: 423px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Remove background from the main container */
+  padding: 20px;
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 10px;
+}
+
+.overall-containergaminghead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #26fb01; /* Green background */
+  border-radius: 10px;
+  opacity: 0.7; /* Set the opacity for the background only */
+  z-index: -1; /* Place it behind the content */
+}
+
+
+.image {
+  max-height: 100%;
+  max-width: 50%;
+  object-fit: contain;
+}
+
+.text-container {
+  color: white;
+  text-align: left;
+  max-width: 45%;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #0047ab;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
