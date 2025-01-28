@@ -18,13 +18,13 @@ const Payment = () => {
       try {
         const token = localStorage.getItem('token'); // Get token from local storage
         // Fetch user details
-        const userResponse = await axios.get('http://localhost:5000/api/auth/user', {
+        const userResponse = await axios.get('https://techndrvie.onrender.com/api/auth/user', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
         // Fetch cart details
-        const cartResponse = await axios.get('http://localhost:5000/api/cart', {
+        const cartResponse = await axios.get('https://techndrvie.onrender.com/api/cart', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -64,7 +64,7 @@ const Payment = () => {
     try {
       const token = localStorage.getItem('token');
       // Send order details to backend
-      await axios.post('http://localhost:5000/api/orders', orderDetails, {
+      await axios.post('https://techndrvie.onrender.com/api/orders', orderDetails, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

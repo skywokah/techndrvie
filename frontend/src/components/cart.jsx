@@ -37,7 +37,7 @@ const Cart = () => {
   const handleQuantityChange = async (itemId, newQuantity) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5000/api/cart/${itemId}`, { quantity: newQuantity }, {
+      await axios.put(`https://techndrvie.onrender.com/api/cart/${itemId}`, { quantity: newQuantity }, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -51,7 +51,7 @@ const Cart = () => {
   const handleRemoveItem = async (itemId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/cart/${itemId}`, {
+      await axios.delete(`https://techndrvie.onrender.com/api/cart/${itemId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -86,7 +86,7 @@ const Cart = () => {
                   <CardMedia
                     component="img"
                     height="200"
-                    image={`http://localhost:5000/${item.product.image}`} // Ensure correct path
+                    image={`https://techndrvie.onrender.com/${item.product.image}`} // Ensure correct path
                     alt={item.product.name}
                   />
                 )}

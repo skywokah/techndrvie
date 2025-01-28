@@ -28,7 +28,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const apiUrl ='http://localhost:5000/api/auth/register';
+      const apiUrl ='https://techndrvie.onrender.com/api/auth/register';
 
       const response = await axios.post(apiUrl, formData, {
         headers: { 'Content-Type': 'application/json' },

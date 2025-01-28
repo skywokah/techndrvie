@@ -16,7 +16,7 @@ const AdminPage = () => {
     // Fetch products from the API
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products');
+        const response = await axios.get('https://techndrvie.onrender.com/api/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -67,7 +67,7 @@ const AdminPage = () => {
 
     try {
       const token = localStorage.getItem('adminToken'); // Get token from local storage
-      const response = await axios.post('http://localhost:5000/api/products', formData, {
+      const response = await axios.post('https://techndrvie.onrender.com/api/products', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`, // Send token in headers
@@ -84,7 +84,7 @@ const AdminPage = () => {
   const handleDeleteProduct = async (productId) => {
     try {
       const token = localStorage.getItem('adminToken'); // Get token from local storage
-      await axios.delete(`http://localhost:5000/api/products/${productId}`, {
+      await axios.delete(`https://techndrvie.onrender.com/api/products/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`, // Send token in headers
         },
@@ -144,7 +144,7 @@ const AdminPage = () => {
 
     try {
       const token = localStorage.getItem('adminToken'); // Get token from local storage
-      const response = await axios.put(`http://localhost:5000/api/products/${editProduct._id}`, formData, {
+      const response = await axios.put(`https://techndrvie.onrender.com/api/products/${editProduct._id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`, // Send token in headers

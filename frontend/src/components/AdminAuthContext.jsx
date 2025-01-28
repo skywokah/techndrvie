@@ -10,7 +10,7 @@ export const AdminAuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/admin/login', { email, password });
+      const response = await axios.post('https://techndrvie.onrender.com/api/admin/login', { email, password });
       setAdmin(response.data);
       localStorage.setItem('adminToken', response.data.token);
     } catch (error) {
@@ -20,7 +20,7 @@ export const AdminAuthProvider = ({ children }) => {
 
   const signup = async (email, password) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/admin/signup', { email, password });
+      const response = await axios.post('https://techndrvie.onrender.com/api/admin/signup', { email, password });
       setAdmin(response.data);
       localStorage.setItem('adminToken', response.data.token);
     } catch (error) {

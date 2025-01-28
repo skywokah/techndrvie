@@ -25,7 +25,7 @@ const Headphone = () => {
     // Fetch products from the API
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products');
+        const response = await axios.get('https://techndrvie.onrender.com/api/products');
         // Filter products by "Speakers" category
         const headphones = response.data.filter(product => product.category === 'Headphones');
         setProducts(headphones);
@@ -45,7 +45,7 @@ const Headphone = () => {
     } else {
       try {
         const token = localStorage.getItem('token'); // Get token from local storage
-        await axios.post('http://localhost:5000/api/cart', {
+        await axios.post('https://techndrvie.onrender.com/api/cart', {
           productId: product._id,
           quantity: 1,
         }, {
@@ -77,7 +77,7 @@ const Headphone = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image={`http://localhost:5000/${product.image}`}
+                  image={`https://techndrvie.onrender.com/${product.image}`}
                   alt={product.name}
                 />
                 <CardContent>

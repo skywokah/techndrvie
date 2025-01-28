@@ -23,7 +23,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const apiUrl = 'http://localhost:5000/api/auth/login'; // Ensure the correct endpoint
+      const apiUrl = 'https://techndrvie.onrender.com/api/auth/login'; // Ensure the correct endpoint
       const response = await axios.post(apiUrl, formData);
 
       if (response.status === 200) {

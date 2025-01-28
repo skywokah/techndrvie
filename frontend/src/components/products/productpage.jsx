@@ -13,7 +13,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+        const response = await axios.get(`https://techndrvie.onrender.com/api/products/${id}`);
         setProduct(response.data);
       } catch (error) {
         console.error('Error fetching product:', error);
@@ -29,7 +29,7 @@ const ProductPage = () => {
     } else {
       try {
         const token = localStorage.getItem('token'); // Get token from local storage
-        await axios.post('http://localhost:5000/api/cart', {
+        await axios.post('https://techndrvie.onrender.com/api/cart', {
           productId: product._id,
           quantity: 1,
         }, {
@@ -51,7 +51,7 @@ const ProductPage = () => {
   return (
     <div className="product-page">
       <div className="product-image">
-        <img src={`http://localhost:5000/${product.image}`} alt={product.name} />
+        <img src={`https://techndrvie.onrender.com/${product.image}`} alt={product.name} />
       </div>
       <div className="product-details">
         <h1>{product.name}</h1>
