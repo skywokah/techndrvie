@@ -15,7 +15,7 @@ import Speaker from './components/products/speakers';
 import Headphone from './components/products/headphones';
 import Cart from './components/cart'; // Import Cart component
 import { useAuth } from './AuthContext'; // Import useAuth from AuthContext
-import ProductPage from './components/products/ProductPage'; // Ensure correct import path
+import ProductPage from './components/productpage'; // Ensure correct import path
 import { AdminAuthProvider } from './components/AdminAuthContext'; // Import AdminAuthProvider
 import AdminSignup from './components/AdminSignup';
 import AdminLogin from './components/AdminLogin';
