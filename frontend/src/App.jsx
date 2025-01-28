@@ -20,7 +20,7 @@ import { AdminAuthProvider } from './components/AdminAuthContext'; // Import Adm
 import AdminSignup from './components/AdminSignup';
 import AdminLogin from './components/AdminLogin';
 import Payment from './components/Payment'; // Import Payment component
-import './app.css';
+import './App.css';
 
 const Home = () => <div>Home Page</div>;
 const About = () => <div>About Page</div>;
