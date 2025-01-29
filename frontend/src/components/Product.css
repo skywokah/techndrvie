@@ -3,58 +3,28 @@
   --bs-body-font-family: 'Revalia'; /* Replace with your font */
 }
 
-.product-container {
-  position: relative;
-  padding: 2rem;
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
-.blur-background {
-  filter: blur(5px);
-  pointer-events: none;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.product-card {
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-}
-
-.product-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(44, 44, 44);
-  padding: 2rem;
+.card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
-.modal-content {
+.card img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.card img:hover {
+  filter: grayscale(0%);
+}
+
+.card-content {
   text-align: center;
-}
-
-.modal-content button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #00bcd4;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.modal-content button:hover {
-  background: #007f9e;
 }
 

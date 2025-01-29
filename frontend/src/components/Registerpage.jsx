@@ -2,7 +2,7 @@ import React, { useState } from 'react'; // React hooks for state management
 import { TextField, Button, Typography, Container, Box, Grid, Link } from '@mui/material'; // Material-UI components
 import { useNavigate } from 'react-router-dom'; // For navigation between pages
 import axios from 'axios'; // Axios for HTTP requests
-import './product.css';
+import './Product.css';
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '', confirmPassword: '' }); // State for register input values

@@ -23,6 +23,7 @@ body {
     background: black; /* Fallback in case the video doesn't load */
 }
 
+
 .fade-in-text {
   color: white;
   font-size: 2rem; /* Adjust size as needed */
@@ -32,7 +33,15 @@ body {
   transition: opacity 1s ease-in-out, transform 2s ease-in-out;
 }
 
+
+
 .fade-in-text.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
